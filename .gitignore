@@ -1,0 +1,14 @@
+*.swp
+*.cache
+/.classpath
+/.project
+*.log
+*.*~
+/target
+/project/target
+/project/project/target
+/.settings
+*.DS_Store
+.ensime
+.idea
+.idea_modules
