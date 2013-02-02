@@ -5,7 +5,7 @@ import org.slf4j.LoggerFactory
 class Account(val owner: String, var balance: Double)
 
 object Account {
-  val logger = LoggerFactory.getLogger(Account.getClass())
+  val logger: Logger = LoggerFactory.getLogger(Account.getClass())
   def transfer(from: Account, to: Account, amount: Double) {
     logger.info("tranfering from {} to={}", from.owner, to.owner) //TODO: more than two argument needs java array
     from.balance -= amount
